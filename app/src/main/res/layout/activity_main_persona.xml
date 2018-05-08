@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#76D7C4"
+    tools:context="com.example.alejandro.personaregis.MainActivityPersona">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Registro Usuario"
+        android:textColor="#FFF94200"
+        android:textColorHint="#4600F3"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="287dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fondo_borde"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario:"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/eT_user"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="70"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Contraseña:"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/eT_pass"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Email:"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/eT_email"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Perfil:"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/eT_perfil"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegis"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnregistro_color"
+            android:text="Registrar"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="2dp" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="165dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnupdate_color"
+            android:text="Actualizar"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="165dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btneliminar_color"
+            android:text="Eliminar"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="2dp" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btnbuscar_color"
+            android:text="Buscar"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBorrarTodo"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btnborrartodo_colo"
+        android:text="Limpiar"
+        android:textStyle="bold"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:id="@+id/Mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:text="¡Gracias por tu registro!"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
